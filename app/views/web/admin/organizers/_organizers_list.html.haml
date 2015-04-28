@@ -1,0 +1,24 @@
+- model_class = Organizer
+%table.table.table-striped.table-condensed
+  %thead
+    %tr
+      %th= model_class.human_attribute_name(:id)
+      %th= model_class.human_attribute_name(:full_name)
+      %th= model_class.human_attribute_name(:place)
+      %th= model_class.human_attribute_name(:created_at)
+      %th=t 'helpers.links.actions'
+  %tbody
+    - organizers.each do |organizer|
+      %tr
+        %td= link_to organizer.id, edit_admin_organizer_path(organizer)
+        %td= link_to organizer.full_name, edit_admin_organizer_path(organizer)
+        %td= "#{organizer.municipality} #{organizer.locality}"
+        %td=l organizer.created_at
+        %td.actions
+          - if organizer.unviewed?
+            = link_to admin_organizer_path(organizer, organizer: { state: :confirmed }), method: :patch, class: 'btn btn-xs btn-success' do
+              %span.glyphicon.glyphicon-ok
+          = link_to edit_admin_organizer_path(organizer), class: 'btn btn-warning btn-xs' do
+            %span.glyphicon.glyphicon-pencil
+          = link_to admin_organizer_path(organizer), method: :delete, class: 'btn btn-xs btn-danger' do
+            %span.glyphicon.glyphicon-remove

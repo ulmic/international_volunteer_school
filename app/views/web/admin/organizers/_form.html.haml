@@ -1,0 +1,28 @@
+- model_class = Organizer
+- current_title = page_title(action, model_class.model_name.human)
+- title current_title, :admin
+.page-header
+  %h1=t current_title
+.row
+  .col-lg-12
+    = render 'layouts/web/admin/shared/errors', object: @organizer_form
+.row
+  .col-lg-12
+    = simple_form_for [:admin, @organizer_form], input_html: { class: 'form-horizontal' } do |f|
+      = f.input :last_name, as: :string
+      = f.input :first_name, as: :string
+      = f.input :patronymic, as: :string
+      = f.input :birth_date, as: :date_picker
+      = f.input :phone, as: :string
+      = f.input :social_link, as: :string
+      = f.input :municipality
+      = f.input :locality
+      = f.input :home_adress, as: :string
+      = f.input :experience
+      = f.input :reason
+      = f.input :activity_line, as: :string
+      = f.input :deals
+      = f.input :pluses
+      = f.input :minuses
+      = f.button :submit, class: 'btn-success', value: t('helpers.links.save')
+      = link_to t('helpers.links.back'), admin_organizers_path, class: 'btn btn-default'
