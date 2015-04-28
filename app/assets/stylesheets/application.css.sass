@@ -1,0 +1,50 @@
+/*
+ *= require_tree .
+ *= require bootstrap-datetimepicker
+ *= require_self
+ */
+
+@import 'bootstrap-sprockets'
+@import 'bootstrap'
+
+$persic_color: #fac416
+$contest_color: #ffae00
+
+.link
+  cursor: pointer
+
+@font-face
+  font-family: bold_mic_font
+  src: font-url('PFSquareSansPro-Medium.ttf')
+
+@font-face
+  font-family: mic_font
+  src: font-url('PFBeauSansPro-Light.ttf')
+
+body
+  font-family: mic_font
+  background-color: #333
+  color: #fff
+
+footer
+  a
+    &:hover
+      color: $contest_color
+  .logo
+    float: left
+    background-color: white
+    padding: 5px
+    border-radius: 5px
+    img
+      width: 100%
+
+.bootstrap-datetimepicker-widget
+  color: #333
+
+.alert
+  text-align: left
+
+textarea
+  height: 100px
+  &:focus
+    height: 300px
