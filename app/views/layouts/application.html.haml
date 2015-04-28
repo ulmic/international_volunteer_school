@@ -1,0 +1,30 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
+    %title
+      = yield :title
+    = stylesheet_link_tag    'application'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+    = favicon_link_tag 'favicon.ico'
+  %body
+    .site-wrapper
+      .site-wrapper-inner
+        .cover-container
+          .masthead.clearfix
+            .inner
+              %h3.masthead-brand.link{ data: { href: root_path } }
+                = t('application.name')
+              %nav
+                %ul.nav.masthead-nav
+                  = menu_item new_organizer_path do
+                    = t('.send_request')
+          .inner.cover
+            = flash_messages
+            = yield
+          .mastfoot
+            .inner
+              %p
+                = render 'layouts/web/shared/footer'

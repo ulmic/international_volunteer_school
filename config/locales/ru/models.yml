@@ -1,0 +1,26 @@
+ru:
+  activerecord:
+    models:
+      organizer: Заявка
+    attributes:
+      organizer:
+        first_name: Имя
+        patronymic: Отчество
+        last_name: Фамилия
+        email: E-mail
+        birth_date: Дата рождения
+        municipality: Муниципальное образование
+        locality: Населённый пункт
+        phone: Телефон
+        accept_agreement: Принимаете лицензионное соглашение
+        social_link: Страница в социальной сети
+        home_adress: Домашний адрес
+        experience: 'Опыт организации волонтерских проектов'
+        reason: 'Почему Вы хотите заниматься подготовкой Школы волонтеров?'
+        activity_line: 'Какие направления волонтерства Вам интересны? (Экология, помощь малоимущим и т.д.)'
+        deals: 'Что бы Вы предложили в программу Школы?'
+        pluses: 'Личные плюсы'
+        minuses: 'Личные минусы'
+        place: Место
+        full_name: Полное имя
+        created_at: Дата регистрации

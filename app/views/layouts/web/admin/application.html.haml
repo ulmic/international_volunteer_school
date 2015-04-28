@@ -1,0 +1,11 @@
+%html
+  %head
+    = favicon_link_tag 'favicon.ico'
+    = stylesheet_link_tag 'web/admin/application', "web/admin/#{controller_name}"
+    = javascript_include_tag 'web/admin/application', "web/admin/#{controller_name}"
+    %title
+      = yield :title
+  %body
+    = render 'layouts/web/admin/navbar'
+    .container
+      = yield
