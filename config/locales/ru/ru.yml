@@ -1,0 +1,63 @@
+ru:
+  admin: Админка
+  application:
+    name: Международная волонтёрская школа
+    developers: Разработчики сайта
+    github_link: Этот проект на Github
+    organization: Молодёжный инициативный центр
+  layouts:
+    application:
+      send_request: Подать заявку в рабочую группу
+    web:
+      admin:
+        shared:
+          errors:
+            some_errors_was_found: В процессе сохранения были найдены ошибки
+  web:
+    organizers:
+      new:
+        title: Подать заявку в рабочую группу
+        send_request: Отправить заявку
+  placeholders:
+    organizer:
+      email: Почтовый ящик
+      phone: 'Пример: +79123456789'
+  helpers:
+    enter: Войти
+    no_author: Нет автора
+    in: в
+    from: c
+    until: по
+    year: 'года'
+    short_year: 'г.'
+    short_years: 'гг.'
+    more_info: 'Подробнее'
+    hide: 'Скрыть'
+    cancel: Отмена
+    view_all: посмотреть всех
+    actions:
+      update: Редактировать
+      create: Создать
+      destroy: Удалить
+      show: Показать
+      index: Все
+      edit: Редактировать
+    links:
+      actions: Действия
+      edit: Изменить
+      destroy: Удалить
+      restore: Восстановить
+      new: Добавить
+      save: Сохранить
+      back: Назад
+      select: Выбрать
+      approve: Подтвердить
+      decline: Отклонить
+      published: Опубликованные новости
+      unpublished: Неопубликованные новости
+      add: Добавить
+  flash_messages:
+    web:
+      organizers:
+        create:
+          success: 'Ваша заявка успешно отправлена! Орг. комитет свяжется с вами!'
