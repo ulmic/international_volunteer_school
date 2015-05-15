@@ -1,19 +1,8 @@
 %footer
-  %br
-    .row
-      .col-md-offset-3.col-md-1.logo
-        = link_to 'http://ulmic.ru', target: '_blank' do
-          = image_tag 'main/logo-mic.png'
-      .col-md-4
-        &copy
-        = copyright_notice_year_range 2015
-        = t('application.organization')
-        %br
-        = link_to 'http://ulmic.ru', 'http://ulmic.ru', target: '_blank'
-        %br
-        = link_to t('application.developers'), 'https://github.com/ulmic', target: '_blank'
-        %br
-        = link_to t('application.github_link'), 'https://github.com/ulmic/international_volunteer_school', target: '_blank'
+  &copy
+  = link_to 'http://ulmic.ru' do
+    = "#{t('application.organization')},"
+  = copyright_notice_year_range(2015)
 = stylesheet_link_tag 'vendor', media: 'all', debug: false
 = stylesheet_link_tag 'application'
 = javascript_include_tag 'vendor', debug: false

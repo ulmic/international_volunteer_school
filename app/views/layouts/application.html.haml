@@ -10,13 +10,18 @@
     = csrf_meta_tags
     = favicon_link_tag 'favicon.ico'
   %body
+    .background#background_1
+    .background#background_2
+    .background#background_3
+    .background#background_4
+    .background-transparent-white
     .site-wrapper
       .site-wrapper-inner
         .cover-container
           .masthead.clearfix
             .inner
               %h3.masthead-brand.link{ data: { href: root_path } }
-                = t('application.name')
+                = image_tag 'main/dobro.png'
               %nav
                 %ul.nav.masthead-nav
                   = menu_item new_organizer_path do
