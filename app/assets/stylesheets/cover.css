@@ -27,7 +27,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #fff;
@@ -56,12 +55,22 @@ body {
 /* Padding for spacing */
 .inner {
   padding: 30px;
+  padding-top: 0px;
+}
+
+.inner a {
+  margin-top: 30px;
 }
 
 
 /*
  * Header
  */
+
+.masthead {
+  background-color: #333;
+}
+
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -84,7 +93,7 @@ body {
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
-  background-color: transparent;
+  background-color: #333;
   border-bottom-color: #a9a9a9;
   border-bottom-color: rgba(255,255,255,.25);
 }
@@ -128,8 +137,18 @@ body {
 .mastfoot {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
+  background-color: #333;
+  text-align: left;
+  font-size: 23px;
 }
 
+.mastfoot .inner {
+  padding-bottom: 0px;
+}
+
+.mastfoot a {
+  color: #999;
+}
 
 /*
  * Affix and center
@@ -154,12 +173,3 @@ body {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
 }
-
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 990px;
-  }
-}
-
