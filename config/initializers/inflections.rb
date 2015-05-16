@@ -14,4 +14,5 @@ ActiveSupport::Inflector.inflections(:ru) do |inflect|
   inflect.plural /да$/i, 'ды'
   inflect.plural /нт$/i, 'нты'
   inflect.plural /ка$/i, 'ки'
+  inflect.plural /ца$/i, 'цы'
 end
