@@ -76,6 +76,10 @@ body {
   margin-bottom: 10px;
 }
 
+.masthead-brand:hover {
+  opacity: 0.8;
+}
+
 .masthead-nav > li {
   display: inline-block;
 }
