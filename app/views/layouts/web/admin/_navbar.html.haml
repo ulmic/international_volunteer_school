@@ -10,4 +10,6 @@
     %ul.nav.navbar-nav
       = menu_item admin_organizers_path do
         = Organizer.model_name.human.pluralize(:ru)
+      = menu_item admin_pages_path do
+        = Page.model_name.human.pluralize(:ru)
     %ul.nav.navbar-nav.navbar-right

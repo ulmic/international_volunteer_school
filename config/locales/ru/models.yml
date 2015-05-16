@@ -2,6 +2,7 @@ ru:
   activerecord:
     models:
       organizer: Заявка
+      page: Страница
     attributes:
       organizer:
         first_name: Имя
@@ -24,3 +25,8 @@ ru:
         place: Место
         full_name: Полное имя
         created_at: Дата регистрации
+      page:
+        title: Название
+        body: Тело страницы
+        slug: Внутренний адрес
+        created_at: Дата создания

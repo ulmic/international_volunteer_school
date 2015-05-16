@@ -10,21 +10,21 @@
 .row
   .col-md-6.col-md-offset-1
     = simple_form_for @organizer, url: { controller: 'web/organizers', action: :create }, html: { class: 'form-horizontal' } do |f|
-      = f.input :email, as: :string
-      = f.input :first_name, as: :string
-      = f.input :patronymic, as: :string
-      = f.input :last_name, as: :string
-      = f.input :birth_date, as: :date_picker
+      = f.input :email, as: :string, placeholder: t('activerecord.attributes.organizer.email'), label: false
+      = f.input :first_name, as: :string, placeholder: t('activerecord.attributes.organizer.first_name'), label: false
+      = f.input :patronymic, as: :string, placeholder: t('activerecord.attributes.organizer.patronymic'), label: false
+      = f.input :last_name, as: :string, placeholder: t('activerecord.attributes.organizer.last_name'), label: false
+      = f.input :birth_date, as: :date_picker, placeholder: t('activerecord.attributes.organizer.birth_date'), label: false
       = f.input :municipality
       = f.input :locality, as: :grouped_select, collection: Localities.list_hash, group_method: :last
-      = f.input :phone, as: :string, placeholder: t('placeholders.organizer.phone')
-      = f.input :social_link, as: :string
-      = f.input :home_adress, as: :string
-      = f.input :experience
-      = f.input :reason
-      = f.input :activity_line
-      = f.input :deals
-      = f.input :pluses
-      = f.input :minuses
+      = f.input :phone, as: :string, placeholder: t('activerecord.attributes.organizer.phone'), label: false
+      = f.input :social_link, as: :string, placeholder: t('activerecord.attributes.organizer.social_link'), label: false
+      = f.input :home_adress, as: :string, placeholder: t('activerecord.attributes.organizer.home_adress'), label: false
+      = f.input :experience, placeholder: t('activerecord.attributes.organizer.experience'), label: false
+      = f.input :reason, placeholder: t('activerecord.attributes.organizer.reason'), label: false
+      = f.input :activity_line, placeholder: t('activerecord.attributes.organizer.activity_line'), label: false
+      = f.input :deals, placeholder: t('activerecord.attributes.organizer.deals'), label: false
+      = f.input :pluses, placeholder: t('activerecord.attributes.organizer.pluses'), label: false
+      = f.input :minuses, placeholder: t('activerecord.attributes.organizer.minuses'), label: false
       = f.input :accept_agreement, as: :boolean
       = f.button :submit, t('.send_request'), id: 'send_request'

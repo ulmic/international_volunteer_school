@@ -4,11 +4,10 @@
 #= require moment/ru
 #= require bootstrap-datetimepicker
 #= require pickers
+#= require ckeditor/init
 #= require_tree .
 
 $ ->
-  change_background = ->
-
   $('.datetimepicker').datetimepicker()
   $('.datepicker').datetimepicker()
   $('.link').click ->

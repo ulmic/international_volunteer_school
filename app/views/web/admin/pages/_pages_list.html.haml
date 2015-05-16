@@ -1,0 +1,19 @@
+- model_class = Page
+%table.table.table-striped.table-condensed
+  %thead
+    %tr
+      %th= model_class.human_attribute_name(:id)
+      %th= model_class.human_attribute_name(:title)
+      %th= model_class.human_attribute_name(:created_at)
+      %th=t 'helpers.links.actions'
+  %tbody
+    - pages.each do |page|
+      %tr
+        %td= link_to page.id, edit_admin_page_path(page)
+        %td= link_to page.title, edit_admin_page_path(page)
+        %td=l page.created_at
+        %td.actions
+          = link_to edit_admin_page_path(page), class: 'btn btn-warning btn-xs' do
+            %span.glyphicon.glyphicon-pencil
+          = link_to admin_page_path(page), method: :delete, class: 'btn btn-xs btn-danger' do
+            %span.glyphicon.glyphicon-remove
