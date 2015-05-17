@@ -24,6 +24,8 @@
                 = image_tag 'main/dobro.png'
               %nav
                 %ul.nav.masthead-nav
+                  = menu_item page_path(@about_page) do
+                    = @about_page.title
           .inner.cover
             = flash_messages
             = yield
