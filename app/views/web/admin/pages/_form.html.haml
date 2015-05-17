@@ -11,6 +11,6 @@
     = simple_form_for [:admin, @page_form], input_html: { class: 'form-horizontal' } do |f|
       = f.input :title, as: :string
       = f.input :slug, as: :string
-      = f.input :body, as: :ckeditor
+      = f.input :body
       = f.button :submit, class: 'btn-success', value: t('helpers.links.save')
       = link_to t('helpers.links.back'), admin_pages_path, class: 'btn btn-default'
