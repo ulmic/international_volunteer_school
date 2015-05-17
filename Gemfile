@@ -40,6 +40,7 @@ gem 'foundation-rails', github: 'zurb/foundation-rails'
 gem 'autoprefixer-rails'
 gem 'select2-rails'
 gem 'bootstrap_flash_messages'
+gem 'responders', '~> 2.0'
 
 group :production do
   gem 'unicorn-rails'
