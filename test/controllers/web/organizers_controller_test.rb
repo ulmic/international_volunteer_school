@@ -5,6 +5,7 @@ class Web::OrganizersControllerTest < ActionController::TestCase
     @attrs = attributes_for :organizer
     @organizer = create :organizer
     @organizer.save
+    create :page
   end
 
   test 'should get new' do
