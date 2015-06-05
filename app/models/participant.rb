@@ -1,4 +1,5 @@
 class Participant < User
+  validates :email, presence: true
   validates :first_name, presence: true,
                          human_name: true
   validates :patronymic, presence: true,

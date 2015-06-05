@@ -3,6 +3,7 @@ ru:
     models:
       organizer: Заявка
       page: Страница
+      participant: Участник
     attributes:
       organizer:
         first_name: Имя
