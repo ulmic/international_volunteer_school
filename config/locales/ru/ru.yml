@@ -18,6 +18,10 @@ ru:
       new:
         title: Подать заявку в рабочую группу
         send_request: Отправить заявку
+    participants:
+      new:
+        title: Подать заявку на участие в школе
+        send_request: Отправить заявку
   placeholders:
     organizer:
       email: Почтовый ящик

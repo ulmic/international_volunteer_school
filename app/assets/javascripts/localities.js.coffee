@@ -14,4 +14,5 @@ $ ->
     check_locality $municipality_input
 
   init_change_select $('#organizer_municipality')
+  init_change_select $('#participant_municipality')
   return

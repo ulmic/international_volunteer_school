@@ -1,6 +1,6 @@
 - title
 = stylesheet_link_tag 'web/participants'
-= javascript_include_tag 'web/participants'
+= javascript_include_tag 'localities'
 .page-header
   %h2
     = t('.title')
@@ -20,11 +20,12 @@
       = f.input :phone, as: :string, placeholder: t('activerecord.attributes.participant.phone'), label: false
       = f.input :social_link, as: :string, placeholder: t('activerecord.attributes.participant.social_link'), label: false
       = f.input :home_adress, as: :string, placeholder: t('activerecord.attributes.participant.home_adress'), label: false
-      = f.input :experience, placeholder: t('activerecord.attributes.participant.experience'), label: false
       = f.input :reason, placeholder: t('activerecord.attributes.participant.reason'), label: false
-      = f.input :activity_line, placeholder: t('activerecord.attributes.participant.activity_line'), label: false
-      = f.input :deals, placeholder: t('activerecord.attributes.participant.deals'), label: false
-      = f.input :pluses, placeholder: t('activerecord.attributes.participant.pluses'), label: false
-      = f.input :minuses, placeholder: t('activerecord.attributes.participant.minuses'), label: false
+      = f.input :activity_line, placeholder: t('activerecord.attributes.participant.activity_line')
+      = f.input :another_line, as: :string, placeholder: t('activerecord.attributes.participant.another_line'), label: false
+      = f.input :school, as: :string, placeholder: t('activerecord.attributes.participant.school'), label: false
+      = f.input :organization, placeholder: t('activerecord.attributes.participant.organization'), label: false
+      = f.input :what_you_want, placeholder: t('activerecord.attributes.participant.what_you_want'), label: false
+      = f.input :block, placeholder: t('activerecord.attributes.participant.block')
       = f.input :accept_agreement, as: :boolean
       = f.button :submit, t('.send_request'), id: 'send_request'
