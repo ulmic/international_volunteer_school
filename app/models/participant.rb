@@ -35,6 +35,8 @@ class Participant < User
                           :massive_volunteering
                         ]
 
+  include ParticipantScopes
+
   state_machine initial: :unviewed do
     state :unviewed
     state :confirmed

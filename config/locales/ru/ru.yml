@@ -34,6 +34,8 @@ ru:
     more_info: 'Подробнее'
     hide: 'Скрыть'
     cancel: Отмена
+    download: Скачать
+    download_in_format_xls: "Скачать в формате xls"
     view_all: посмотреть всех
     actions:
       update: Редактировать

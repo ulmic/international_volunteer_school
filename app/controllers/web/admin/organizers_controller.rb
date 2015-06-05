@@ -1,6 +1,11 @@
 class Web::Admin::OrganizersController < Web::Admin::ApplicationController
   def index
-    @organizers = Organizer.all.decorate
+    @organizers = Organizer.confirmed
+
+    respond_to do |format|
+      format.html { @organizers.decorate }
+      format.xls { send_data(@organizers.to_xls(only: [ :email, :first_name, :patronymic, :last_name, :birth_date, :phone, :social_link, :municipality, :locality, :home_adress, :experience, :reason, :activity_line, :deals, :pluses, :minuses ])) }
+    end
   end
 
   def new

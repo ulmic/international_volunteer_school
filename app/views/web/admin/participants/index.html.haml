@@ -4,5 +4,6 @@
   %h1
     =t model_class.model_name.human.pluralize(:ru)
     = link_to "#{t 'helpers.links.new'}", new_admin_participant_path, class: 'btn btn-primary'
+    = link_to t('helpers.download_in_format_xls'), admin_participants_path(format: :xls), class: 'btn btn-primary'
   = render 'participants_list', participants: @participants
   = link_to "#{t 'helpers.links.new'}", new_admin_participant_path, class: 'btn btn-primary'
