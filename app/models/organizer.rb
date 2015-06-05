@@ -19,7 +19,6 @@ class Organizer < User
   validates :minuses, presence: true
   validates :accept_agreement, presence: true
 
-  extend Enumerize
   enumerize :municipality, in: Municipalities.list, default: Municipalities.list.first
   enumerize :locality, in: Localities.list, default: Localities.list.first
 
