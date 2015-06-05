@@ -28,3 +28,7 @@ $ ->
     else
       current_background_index++
     $backgrounds.eq(current_background_index).fadeIn(500)), 5000
+
+  $('input.date_picker').click ->
+    $(this).parents('div').children('span').trigger 'click'
+    $('bootstrap-datetimepicker-widget').show()
