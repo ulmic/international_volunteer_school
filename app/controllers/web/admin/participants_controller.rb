@@ -1,9 +1,10 @@
 class Web::Admin::ParticipantsController < Web::Admin::ApplicationController
   def index
-    @participants = Participant.confirmed
+    @participants = Participant.all
+
     respond_to do |format|
-      format.html { @participants.decorate }
-      format.xls { send_data(@participants.to_xls(only: [ :email, :first_name, :patronymic, :last_name, :phone, :birth_date, :social_link, :home_adress, :reason, :activity_line, :school, :organization, :what_you_want, :block, :another_line ])) }
+      format.html { @participants = @participants.decorate }
+      format.xls { send_data(@participants.confirmed.to_xls(only: [ :email, :first_name, :patronymic, :last_name, :phone, :birth_date, :social_link, :home_adress, :reason, :activity_line, :school, :organization, :what_you_want, :block, :another_line ])) }
     end
   end
 
