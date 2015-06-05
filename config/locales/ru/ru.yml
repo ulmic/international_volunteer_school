@@ -9,6 +9,8 @@ ru:
     application:
       send_request: Подать заявку в рабочую группу
     web:
+      shared:
+        navbar:
       admin:
         shared:
           errors:

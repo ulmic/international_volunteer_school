@@ -21,7 +21,7 @@ $ ->
   $backgrounds.hide()
   current_background_index = 0
   $backgrounds.eq(current_background_index).show()
-  if window.location.href.indexOf 'page' > -1
+  if window.location.href.indexOf('page') > -1
     $('#background_4').show()
   else
     setInterval (->
@@ -31,6 +31,10 @@ $ ->
       else
         current_background_index++
       $backgrounds.eq(current_background_index).fadeIn(500)), 5000
+
+  init_blank_adding = ->
+    $('.blank').prop('target', '_blank')
+  init_blank_adding()
 
   $('input.date_picker').click ->
     $(this).parents('div').children('span').trigger 'click'

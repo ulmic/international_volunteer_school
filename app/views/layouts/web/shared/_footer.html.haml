@@ -1,8 +1,19 @@
 %footer
-  &copy
-  = link_to 'http://ulmic.ru' do
-    = "#{t('application.organization')},"
-  = copyright_notice_year_range(2015)
+  .row
+    .col-md-6
+      = link_to 'http://ulmic.ru', class: 'blank' do
+        = image_tag 'main/logo-mic.png', class: 'logo'
+      = link_to 'http://mpol.ulgov.ru/', class: 'blank' do
+        = image_tag 'main/logo-dep.png', class: 'logo'
+      = link_to 'http://fadm.gov.ru', class: 'blank' do
+        = image_tag 'main/logo_rosmolod.jpg', class: 'logo'
+      = link_to 'http://ulmic.ru', class: 'blank' do
+        = image_tag 'main/project_it.png', class: 'logo'
+    .col-md-6.pull-right
+      &copy
+      = link_to 'http://ulmic.ru' do
+        = "#{t('application.organization')},"
+      = copyright_notice_year_range(2015)
 = stylesheet_link_tag 'vendor', media: 'all', debug: false
 = stylesheet_link_tag 'application'
 = javascript_include_tag 'vendor', debug: false
