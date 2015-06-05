@@ -41,6 +41,7 @@ gem 'autoprefixer-rails'
 gem 'select2-rails'
 gem 'bootstrap_flash_messages'
 gem 'responders', '~> 2.0'
+gem 'to_xls-rails'
 
 group :production do
   gem 'unicorn-rails'

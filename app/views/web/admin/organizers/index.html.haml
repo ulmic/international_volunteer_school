@@ -3,6 +3,7 @@
 .page-header
   %h1
     =t model_class.model_name.human.pluralize(:ru)
-    = link_to "#{t 'helpers.links.new'}", new_admin_organizer_path, class: 'btn btn-primary'
+    = link_to t('helpers.links.new'), new_admin_organizer_path, class: 'btn btn-primary'
+    = link_to t('helpers.download_in_format_xls'), admin_organizers_path(format: :xls), class: 'btn btn-primary'
   = render 'organizers_list', organizers: @organizers
   = link_to "#{t 'helpers.links.new'}", new_admin_organizer_path, class: 'btn btn-primary'

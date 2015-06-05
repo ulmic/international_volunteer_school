@@ -9,6 +9,8 @@ ru:
     application:
       send_request: Подать заявку в рабочую группу
     web:
+      shared:
+        navbar:
       admin:
         shared:
           errors:
@@ -17,6 +19,10 @@ ru:
     organizers:
       new:
         title: Подать заявку в рабочую группу
+        send_request: Отправить заявку
+    participants:
+      new:
+        title: Подать заявку на участие в школе
         send_request: Отправить заявку
   placeholders:
     organizer:
@@ -34,6 +40,8 @@ ru:
     more_info: 'Подробнее'
     hide: 'Скрыть'
     cancel: Отмена
+    download: Скачать
+    download_in_format_xls: "Скачать в формате xls"
     view_all: посмотреть всех
     actions:
       update: Редактировать
@@ -59,5 +67,8 @@ ru:
   flash_messages:
     web:
       organizers:
+        create:
+          success: 'Ваша заявка успешно отправлена! Орг. комитет свяжется с вами!'
+      participants:
         create:
           success: 'Ваша заявка успешно отправлена! Орг. комитет свяжется с вами!'

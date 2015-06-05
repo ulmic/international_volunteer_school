@@ -1,5 +1,4 @@
 class Organizer < User
-
   validates :first_name, presence: true,
                          human_name: true
   validates :patronymic, presence: true,
@@ -19,9 +18,10 @@ class Organizer < User
   validates :minuses, presence: true
   validates :accept_agreement, presence: true
 
-  extend Enumerize
   enumerize :municipality, in: Municipalities.list, default: Municipalities.list.first
   enumerize :locality, in: Localities.list, default: Localities.list.first
+
+  include OrganizerScopes
 
   state_machine initial: :unviewed do
     state :unviewed

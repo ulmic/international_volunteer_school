@@ -1,2 +1,5 @@
 - title @page.title
-= raw @page.body
+%h1
+  = @page.title
+.body
+  != @page.body

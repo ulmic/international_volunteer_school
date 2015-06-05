@@ -1,0 +1,24 @@
+- model_class = Participant
+%table.table.table-striped.table-condensed
+  %thead
+    %tr
+      %th= model_class.human_attribute_name(:id)
+      %th= model_class.human_attribute_name(:full_name)
+      %th= model_class.human_attribute_name(:place)
+      %th= model_class.human_attribute_name(:created_at)
+      %th=t 'helpers.links.actions'
+  %tbody
+    - participants.each do |participant|
+      %tr
+        %td= link_to participant.id, edit_admin_participant_path(participant)
+        %td= link_to participant.full_name, edit_admin_participant_path(participant)
+        %td= "#{participant.municipality} #{participant.locality}"
+        %td=l participant.created_at
+        %td.actions
+          - if participant.unviewed?
+            = link_to admin_participant_path(participant, participant: { state: :confirmed }), method: :patch, class: 'btn btn-xs btn-success' do
+              %span.glyphicon.glyphicon-ok
+          = link_to edit_admin_participant_path(participant), class: 'btn btn-warning btn-xs' do
+            %span.glyphicon.glyphicon-pencil
+          = link_to admin_participant_path(participant), method: :delete, class: 'btn btn-xs btn-danger' do
+            %span.glyphicon.glyphicon-remove

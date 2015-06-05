@@ -1,8 +1,9 @@
 ru:
   activerecord:
     models:
-      organizer: Заявка
+      organizer: Заявка в рабочую группу
       page: Страница
+      participant: Участник
     attributes:
       organizer:
         first_name: Имя
@@ -25,8 +26,47 @@ ru:
         place: Место
         full_name: Полное имя
         created_at: Дата регистрации
+      participant:
+        first_name: Имя
+        patronymic: Отчество
+        last_name: Фамилия
+        email: E-mail
+        birth_date: Дата рождения
+        municipality: Муниципальное образование
+        locality: Населённый пункт
+        phone: Телефон
+        accept_agreement: Даю согласие на обработку моих персональных данных
+        social_link: Страница в социальной сети
+        home_adress: Домашний адрес
+        experience: 'Опыт организации волонтерских проектов'
+        reason: 'Зачем Вам нужна Школа волонтёров?'
+        activity_line: 'По какому направлению вы бы хотели работать?'
+        deals: 'Что бы Вы предложили в программу Школы?'
+        pluses: 'Личные плюсы'
+        minuses: 'Личные минусы'
+        place: Место
+        full_name: Полное имя
+        created_at: Дата регистрации
+        school: Место учёбы (школа, университет, место работы)
+        organization: 'Представляете ли вы какое-либо волонтёрское объединение, организацию инициативную группу? Если да, то какое?'
+        what_you_want: 'Что именно Вы бы хотели узнать на Школе волонтёров?'
+        another_line: 'Другое направление'
+        block: 'Какой блок Школы волонтёров Вы хотите посетить?'
       page:
         title: Название
         body: Тело страницы
         slug: Внутренний адрес
         created_at: Дата создания
+  enumerize:
+    participant:
+      activity_line:
+        assistance_to_people_with_disabilities: помощь людям с ограниченными физическими возможностями
+        development_of_voluntary_donation: развитие добровольного донорства
+        adaptation_of_children_without_parental_care: адаптация детей, оставшихся без попечения родителей
+        assistance_to_the_poor: помощь малоимущим
+        ecology: экология
+        art_volunteering: 'арт-волонтёрство'
+        another: 'другое (указать какое)'
+      block:
+        help_for_children_with_disabilities: 'Помощь детям инвалидам (г. Ульяновск, РЦ "Подсолнух")'
+        massive_volunteering: 'Массовое добровольчество (лагерь "Юность", Мелекесский район)'
