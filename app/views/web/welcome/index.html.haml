@@ -6,4 +6,8 @@
 %h2.btn-branded.request.link{ data: { href: new_participant_path } }
   Подать заявку
   %br
-  на участие в школе
+  на участие
+%h2.btn-branded.about.link{ data: { href: page_path(@about_page) } }
+  = @about_page.title
+%h2.btn-branded.organizer.link{ data: { href: new_organizer_path } }
+  = t('layouts.application.send_request')

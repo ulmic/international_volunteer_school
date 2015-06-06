@@ -1,0 +1,32 @@
+.about, .organizer
+  display: none
+
+@media (max-width: 767px)
+  .masthead, .mastfoot
+    width: 100%
+  .masthead
+    .inner
+      .masthead-brand
+        float: left
+      .nav
+        li
+          float: left
+  .inner.cover
+    padding-top: 150px
+    .btn-branded
+      margin-left: 10%
+      margin-right: 10%
+  .mastfoot
+    bottom: 0
+@media (max-width: 480px)
+  .masthead
+    .inner
+      .nav
+        display: none
+  .inner.cover
+    padding-top: 15px
+    padding-bottom: 15px
+    .about, .organizer
+      display: block
+    .btn-branded
+      height: 76px
