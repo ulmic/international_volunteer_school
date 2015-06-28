@@ -9,9 +9,9 @@
   .navbar-collapse.collapse
     %ul.nav.navbar-nav
       = menu_item admin_organizers_path do
-        = Organizer.model_name.human.pluralize(:ru)
+        = "#{Organizer.model_name.human.pluralize(:ru)} / #{@organizers_count}"
       = menu_item admin_participants_path do
-        = Participant.model_name.human.pluralize(:ru)
+        = "#{Participant.model_name.human.pluralize(:ru)} / #{@participants_count}"
       = menu_item admin_pages_path do
         = Page.model_name.human.pluralize(:ru)
     %ul.nav.navbar-nav.navbar-right
