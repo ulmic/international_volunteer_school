@@ -8,6 +8,10 @@
 #= require_tree .
 
 $ ->
+
+  dont_change_background = ->
+    window.location.href.indexOf('page') > -1 || window.location.href.indexOf('new') > -1
+
   $('.datetimepicker').datetimepicker()
   $('.datepicker').datetimepicker()
   $('.link').click ->
@@ -21,7 +25,7 @@ $ ->
   $backgrounds.hide()
   current_background_index = 0
   $backgrounds.eq(current_background_index).show()
-  if window.location.href.indexOf('page') > -1
+  if dont_change_background()
     $('#background_4').show()
   else
     setInterval (->
