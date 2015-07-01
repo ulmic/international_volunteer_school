@@ -5,6 +5,7 @@
 #= require bootstrap-datetimepicker
 #= require pickers
 #= require ckeditor/init
+#= require select2
 #= require_tree .
 
 $ ->

@@ -1,3 +1,5 @@
+require 'russia_regions'
+
 class Participant < User
   validates :email, presence: true
   validates :first_name, presence: true,
@@ -18,6 +20,7 @@ class Participant < User
   validates :organization, presence: true
   validates :what_you_want, presence: true
   validates :block, presence: true
+  validates :region, presence: true
 
   enumerize :municipality, in: Municipalities.list, default: Municipalities.list.first
   enumerize :locality, in: Localities.list, default: Localities.list.first
@@ -34,6 +37,9 @@ class Participant < User
                           :help_for_children_with_disabilities,
                           :massive_volunteering
                         ]
+  include RussiaRegions
+
+  enumerize :region, in: RussiaRegions.name_list
 
   include ParticipantScopes
 
