@@ -58,6 +58,12 @@ ru:
         body: Тело страницы
         slug: Внутренний адрес
         created_at: Дата создания
+    errors:
+      models:
+        participant:
+          attributes:
+            phone:
+              phone: имеет неверный формат
   enumerize:
     participant:
       activity_line:
