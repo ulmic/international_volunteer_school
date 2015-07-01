@@ -383,6 +383,7 @@ GEM
     ruby-ole (1.2.11.8)
     ruby_parser (3.6.6)
       sexp_processor (~> 4.1)
+    russia_regions (0.0.3)
     russian (0.6.0)
       i18n (>= 0.5.0)
     rvm-capistrano (1.5.0)
@@ -514,6 +515,7 @@ DEPENDENCIES
   rails (= 4.2.0)
   responders (~> 2.0)
   rmagick
+  russia_regions
   russian
   rvm-capistrano
   select2-rails

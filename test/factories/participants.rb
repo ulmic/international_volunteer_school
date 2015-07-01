@@ -9,6 +9,7 @@ FactoryGirl.define do
     social_link { generate :string }
     municipality { Municipalities.list.first }
     locality { Localities.list.first  }
+    region { RussiaRegions.name_list.first  }
     experience { generate :string }
     reason { generate :string }
     activity_line { 'another' }

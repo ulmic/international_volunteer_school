@@ -10,4 +10,22 @@ $ ->
     else
       $activity_line_another.slideUp()
     return
+
+  init_place_form = ->
+    $municipality_select = $('.participant_municipality')
+    $locality_select = $('.participant_locality')
+    $municipality_select.hide()
+    $locality_select.hide()
+    $state_select = $('#participant_region')
+    $state_select.change ->
+      if $(this).val() == 'Ульяновская область'
+        $locality_select.slideDown()
+        $municipality_select.slideDown()
+      else
+        $locality_select.slideUp()
+        $municipality_select.slideUp()
+      return
+    return
+
+  init_place_form()
   return
