@@ -20,6 +20,7 @@ ru:
       new:
         title: Подать заявку в рабочую группу
         send_request: Отправить заявку
+        filling_on_organizers_is_over: Приём заявок в рабочую группу завершён
     participants:
       new:
         title: Подать заявку на участие в школе
