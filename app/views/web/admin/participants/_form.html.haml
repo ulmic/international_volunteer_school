@@ -21,7 +21,7 @@
       = f.input :home_adress, as: :string
       = f.input :experience
       = f.input :reason
-      = f.input :activity_line, as: :string
+      = f.input :activity_line, as: :select, collection: enumerize_locales_hash(Participant, :activity_line)
       = f.input :deals
       = f.input :pluses
       = f.input :minuses

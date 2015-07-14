@@ -10,4 +10,8 @@ module Web::ApplicationHelper
       "#{current_year}"
     end
   end
+
+  def enumerize_locales_hash(model, attribute)
+    I18n.t("enumerize.#{model.name.underscore.gsub('/', '.')}.#{attribute}").invert
+  end
 end

@@ -54,7 +54,7 @@ group :development, :test do
   gem 'guard-livereload', '~> 2.4', require: false
   gem 'rack-livereload'
   gem 'web-console', '2.0.0.beta2'
-  gem 'spring', '1.3.4'
+  gem 'spring', '1.3.6'
   gem 'factory_girl_rails'
   gem 'pry-rails'
   gem 'pry-byebug'
