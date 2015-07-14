@@ -123,6 +123,7 @@ GEM
     bootstrap_flash_messages (1.0.0)
     bootstrap_glyphicons-rails (0.0.3)
       rails (> 3.1)
+    bower-rails (0.10.0)
     builder (3.2.2)
     byebug (4.0.5)
       columnize (= 0.9.0)
@@ -468,6 +469,7 @@ DEPENDENCIES
   bootstrap-sass
   bootstrap_flash_messages
   bootstrap_glyphicons-rails
+  bower-rails (~> 0.10.0)
   byebug
   capistrano
   capistrano-bundler

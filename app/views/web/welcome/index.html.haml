@@ -1,13 +1,34 @@
 - title :app_name
-%h1
-  Молодёжная волонтёрская школа
-%h2
-  22 - 26 августа
-%h2.btn-branded.request.link{ data: { href: new_participant_path } }
-  Подать заявку
-  %br
-  на участие
-%h2.btn-branded.about.link{ data: { href: page_path(@about_page) } }
-  = @about_page.title
-%h2.btn-branded.organizer.link{ data: { href: new_organizer_path } }
-  = t('layouts.application.send_request')
+.row
+  .col-md-12
+    %h1
+      Молодёжная волонтёрская школа
+    %h2
+      22 - 26 августа
+    %h2.btn-branded.request.link{ data: { href: new_participant_path } }
+      Подать заявку
+      %br
+      на участие
+    %h2.btn-branded.about.link{ data: { href: page_path(@about_page) } }
+      = @about_page.title
+    %h2.btn-branded.organizer.link{ data: { href: new_organizer_path } }
+      = t('layouts.application.send_request')
+.row
+  .slider-pro#video
+    .sp-slides
+      .sp-slide
+        = render 'layouts/web/shared/youtube_embed', link: 'https://www.youtube.com/embed/AsyV9JS_1QU'
+      .sp-slide
+        = render 'layouts/web/shared/youtube_embed', link: 'https://www.youtube.com/embed/EPpJ4Sn0CG4'
+      .sp-slide
+        = render 'layouts/web/shared/youtube_embed', link: 'https://www.youtube.com/embed/BLQVgG-86v8'
+    .sp-thumbnails
+      .sp-thumbnail
+        %h4
+          Погружение в технологию добра
+      .sp-thumbnail
+        %h4{ style: 'margin-top: 20px' }
+          Мы здесь!
+      .sp-thumbnail
+        %h4{ style: 'margin-top: 20px' }
+          Технология добра

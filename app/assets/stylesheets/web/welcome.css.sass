@@ -1,6 +1,28 @@
 .about, .organizer
   display: none
 
+#video
+  max-width: 600px !important
+  height: 315px !important
+  margin-top: 30px
+  .sp-slides-container
+    height: 315px !important
+  .sp-bottom-thumbnails, .sp-thumbnails
+    width: 100% !important
+    margin-top: 0 !important
+    .sp-thumbnail-container
+      width: 32.85% !important
+      height: 65px !important
+      background-color: white
+      color: #333
+      cursor: pointer
+      border-left: 5px #ffd000 solid
+      &:hover
+        background-color: #ffd000
+        color: white
+      .sp-thumbnail
+        padding: 5px
+
 @media (max-width: 767px)
   .masthead, .mastfoot
     width: 100%
