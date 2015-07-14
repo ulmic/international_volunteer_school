@@ -48,10 +48,6 @@ group :production do
   gem 'unicorn-rails'
 end
 
-group :development do
-  gem 'bower-rails', '~> 0.10.0'
-end
-
 group :development, :test do
   gem 'byebug'
   gem 'foreman'
@@ -75,6 +71,7 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'colorize', '0.6.0'
   gem 'better_errors'
+  gem 'bower-rails', '~> 0.10.0'
 end
 
 group :test do
