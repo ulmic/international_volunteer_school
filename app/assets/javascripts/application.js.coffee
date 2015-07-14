@@ -6,6 +6,7 @@
 #= require pickers
 #= require ckeditor/init
 #= require select2
+#= require slider-pro/dist/js/jquery.sliderPro.min.js
 #= require_tree .
 
 $ ->

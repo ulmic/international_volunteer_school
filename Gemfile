@@ -71,6 +71,7 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'colorize', '0.6.0'
   gem 'better_errors'
+  gem 'bower-rails', '~> 0.10.0'
 end
 
 group :test do
