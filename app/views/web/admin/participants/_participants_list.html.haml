@@ -12,7 +12,7 @@
       %tr
         %td= link_to participant.id, edit_admin_participant_path(participant)
         %td= link_to participant.full_name, edit_admin_participant_path(participant)
-        %td= "#{participant.municipality} #{participant.locality}"
+        %td= participant.place
         %td=l participant.created_at
         %td.actions
           - if participant.unviewed?
