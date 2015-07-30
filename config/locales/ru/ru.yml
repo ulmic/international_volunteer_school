@@ -25,6 +25,8 @@ ru:
       new:
         title: Подать заявку на участие в школе
         send_request: Отправить заявку
+      index:
+        title: Результаты отбора
   placeholders:
     organizer:
       email: Почтовый ящик
@@ -73,3 +75,8 @@ ru:
       participants:
         create:
           success: 'Ваша заявка успешно отправлена! Орг. комитет свяжется с вами!'
+  participant:
+    states:
+      unviewed: Резерв
+      confirmed: Подтверждённые участники
+      banned: Отклонённые

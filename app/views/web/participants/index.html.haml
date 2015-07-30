@@ -1,0 +1,5 @@
+- title
+%h1
+  = t('.title')
+- @participants.keys.each do |type|
+  = render 'participants_list', type: type

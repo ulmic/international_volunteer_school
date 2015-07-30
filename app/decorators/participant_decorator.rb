@@ -8,4 +8,8 @@ class ParticipantDecorator < UserDecorator
       object.region
     end
   end
+
+  def full_name
+    "#{first_name} #{last_name} #{patronymic}"
+  end
 end

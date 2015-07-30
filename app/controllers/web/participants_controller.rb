@@ -1,4 +1,11 @@
 class Web::ParticipantsController < Web::ApplicationController
+  def index
+    @participants = {}
+    @participants[:confirmed] = Participant.confirmed.decorate
+    @participants[:unviewed] = Participant.unviewed.decorate
+    @participants[:banned] = Participant.banned.decorate
+  end
+
   def new
     @participant = ParticipantForm.new_with_model
   end
