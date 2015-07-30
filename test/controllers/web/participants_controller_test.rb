@@ -13,6 +13,11 @@ class Web::ParticipantsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test 'should get index' do
+    get :index
+    assert_response :success, @response.body
+  end
+
   test 'should create' do
     attributes = attributes_for :participant
     post :create, participant: attributes

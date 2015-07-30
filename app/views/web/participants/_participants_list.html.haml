@@ -1,0 +1,19 @@
+.row-fluid.participants
+  %h2
+    = t("participant.states.#{type}")
+  %table.table.table-striped
+    %thead
+      %th
+        Ф.И.О.
+      %th
+        Место жительства
+      %th
+        Дата рождения
+    - @participants[type].each do |participant|
+      %tr
+        %td
+          = participant.full_name
+        %td
+          = participant.place
+        %td
+          =l participant.birth_date, format: '%d %b %Y'

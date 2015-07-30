@@ -10,9 +10,8 @@
 #= require_tree .
 
 $ ->
-
   dont_change_background = ->
-    window.location.href.indexOf('page') > -1 || window.location.href.indexOf('new') > -1
+    window.location.href.indexOf('page') > -1 || window.location.href.indexOf('new') > -1 || window.location.href.indexOf('participants') > -1
 
   $('.datetimepicker').datetimepicker()
   $('.datepicker').datetimepicker()
