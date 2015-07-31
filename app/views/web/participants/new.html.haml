@@ -1,32 +1,6 @@
 - title
-= stylesheet_link_tag 'web/participants'
 = javascript_include_tag 'localities'
-.page-header
-  %h2
-    = t('.title')
 .row
   .col-lg-12
-    = render 'layouts/web/admin/shared/errors', object: @participant
-.row
-  .col-md-6.col-md-offset-1
-    = simple_form_for @participant, url: { controller: 'web/participants', action: :create }, html: { class: 'form-horizontal' } do |f|
-      = f.input :first_name, as: :string, placeholder: t('activerecord.attributes.participant.first_name'), label: false
-      = f.input :patronymic, as: :string, placeholder: t('activerecord.attributes.participant.patronymic'), label: false
-      = f.input :last_name, as: :string, placeholder: t('activerecord.attributes.participant.last_name'), label: false
-      = f.input :birth_date, as: :date_picker, placeholder: t('activerecord.attributes.participant.birth_date'), label: false
-      = f.input :region
-      = f.input :municipality
-      = f.input :locality, as: :grouped_select, collection: Localities.list_hash, group_method: :last
-      = f.input :home_adress, as: :string, placeholder: t('activerecord.attributes.participant.home_adress'), label: false
-      = f.input :phone, as: :string, placeholder: t('activerecord.attributes.participant.phone'), label: false
-      = f.input :social_link, as: :string, placeholder: t('activerecord.attributes.participant.social_link'), label: false
-      = f.input :email, as: :string, placeholder: t('activerecord.attributes.participant.email'), label: false
-      = f.input :school, as: :string, placeholder: t('activerecord.attributes.participant.school'), label: false
-      = f.input :reason, placeholder: t('activerecord.attributes.participant.reason'), label: false
-      = f.input :activity_line, placeholder: t('activerecord.attributes.participant.activity_line')
-      = f.input :another_line, as: :string, placeholder: t('activerecord.attributes.participant.another_line'), label: false
-      = f.input :organization, placeholder: t('activerecord.attributes.participant.organization'), label: false
-      = f.input :what_you_want, placeholder: t('activerecord.attributes.participant.what_you_want'), label: false
-      = f.input :block, placeholder: t('activerecord.attributes.participant.block')
-      = f.input :accept_agreement, as: :boolean
-      = f.button :submit, t('.send_request'), id: 'send_request'
+    %h2
+      Приём заявок завершён на этом сайте будут опубликованы результаты отбора!
