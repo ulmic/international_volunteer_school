@@ -5,5 +5,6 @@ class Web::ApplicationController < ApplicationController
 
   def load_about_page
     @about_page = Page.find_by_slug :about
+    @docs_page = Page.find_by_slug :docs
   end
 end

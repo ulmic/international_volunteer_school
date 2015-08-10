@@ -6,6 +6,7 @@ class Web::OrganizersControllerTest < ActionController::TestCase
     @organizer = create :organizer
     @organizer.save
     create :page
+    create :page, :docs
   end
 
   test 'should get new' do

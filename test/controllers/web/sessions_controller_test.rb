@@ -4,6 +4,7 @@ class Web::SessionsControllerTest < ActionController::TestCase
   setup do
     @user = create :user
     create :page
+    create :page, :docs
   end
 
   test 'new' do

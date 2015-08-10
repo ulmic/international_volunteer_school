@@ -6,6 +6,7 @@ class Web::ParticipantsControllerTest < ActionController::TestCase
     @participant = create :participant
     @participant.save
     create :page
+    create :page, :docs
   end
 
   test 'should get new' do
