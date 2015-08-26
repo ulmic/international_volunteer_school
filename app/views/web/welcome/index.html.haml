@@ -7,14 +7,26 @@
       28 - 31 августа
     %h2
       ДООЦ «Юность», Димитровград
-    %h2.btn-branded.request.link{ data: { href: new_participant_path } }
-      Подать заявку
-      %br
-      на участие
-    %h2.btn-branded.about.link{ data: { href: page_path(@about_page) } }
-      = @about_page.title
-    %h2.btn-branded.organizer.link{ data: { href: new_organizer_path } }
-      = t('layouts.application.send_request')
+.row
+  .col-md-offset-4.col-md-4{ style: 'color: #333; font-size: 15px' }
+    .panel.info{ style: 'padding-left: 5px' }
+      %p
+        Дорогие участники Международной школы волонтёров!
+      %p
+        Отъезд на Школу осуществляется централизованно от гостиницы Советская (ул. Спасская, 8) 28 августа.
+      %p{ style: 'text-align: left' }
+        • в 9:30 - регистрация участников
+      %p{ style: 'text-align: left' }
+        • в 10:00 - отъезд
+      %p{ style: 'text-align: left' }
+        • в 10:30 - остановка на Станции (Верхняя Терасса)
+      %p{ style: 'text-align: left' }
+        • в 10:45 - остановка на кольце в р.п. Чердаклы
+
+      %p
+        Участники из г. Димитровград, Мелекесского района и Новомалыклинского района добираются самостоятельно.
+      %p
+        Возвращаемся в Ульяновск 31 августа в 13:00 к гостинице Советской.
 -#.row
   .slider-pro#video
     .sp-slides
