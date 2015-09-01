@@ -27,10 +27,6 @@
                 %ul.nav.navbar-nav.pull-right
                   = menu_item page_path(@about_page) do
                     = @about_page.title
-                  = menu_item page_path(@docs_page) do
-                    = @docs_page.title
-                  = menu_item new_organizer_path do
-                    = t('.send_request')
           .inner.cover
             = flash_messages
             = yield
